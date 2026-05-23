@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\nekip\Desktop\gpt_projrct_2\FinalTry\FinalTry\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AddEventWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CareerHistoryWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CareerMoveWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CareerRecordWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DepartmentCountReportWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DepartmentEditWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DepartmentsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditEmployeeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditEventTypeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EmployeeDataWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EmployeeDetailsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EventOnDateReportWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EventsJournalWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EventTypesWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LoginWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UsersManagementWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddEventWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CareerHistoryWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CareerMoveWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DepartmentCountReportWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DepartmentEditWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DepartmentsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditEmployeeWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditEventTypeWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EmployeeDataWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EmployeeDetailsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EventOnDateReportWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EventsJournalWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EventTypesWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LoginWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UsersManagementWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

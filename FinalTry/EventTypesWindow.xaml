@@ -1,0 +1,54 @@
+﻿<Window x:Class="HrDepartment.EventTypesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Справочник типов событий"
+        Height="560" Width="860">
+
+    <Window.Resources>
+        <Style x:Key="SectionLabel" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Margin" Value="0,0,0,6"/>
+            <Setter Property="Foreground" Value="#6B7280"/>
+        </Style>
+    </Window.Resources>
+
+
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Style="{StaticResource TitleText}" Text="Справочник: типы событий"/>
+
+        <Border Grid.Row="1" Style="{StaticResource Card}" Margin="0,0,0,12">
+            <DockPanel LastChildFill="False">
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Left">
+                    <TextBlock Style="{StaticResource SectionLabel}" Text="Поиск" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                    <TextBox x:Name="SearchBox" Width="260" TextChanged="SearchBox_TextChanged"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Right" HorizontalAlignment="Right">
+                    <Button Content="Добавить" Style="{StaticResource PrimaryButton}" Width="120" Click="Add_Click"/>
+                    <Button Content="Изменить" Style="{StaticResource ButtonBase}" Width="120" Margin="10,0,0,0" Click="Edit_Click"/>
+                    <Button Content="Удалить" Style="{StaticResource DangerButton}" Width="120" Margin="10,0,0,0" Click="Delete_Click"/>
+                </StackPanel>
+            </DockPanel>
+        </Border>
+
+        <Border Grid.Row="2" Style="{StaticResource Card}">
+            <DataGrid x:Name="GridTypes"
+                      AutoGenerateColumns="False"
+                      CanUserAddRows="False"
+                      IsReadOnly="True"
+                      SelectionMode="Single"
+                      SelectionUnit="FullRow">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="80"/>
+                    <DataGridTextColumn Header="Название" Binding="{Binding Name}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+    </Grid>
+</Window>

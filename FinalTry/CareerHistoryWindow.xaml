@@ -1,0 +1,47 @@
+﻿<Window x:Class="HrDepartment.CareerHistoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="История карьеры сотрудника" 
+        Height="500" 
+        Width="900"
+        WindowStartupLocation="CenterScreen"
+        Background="#f0f4ff">
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <Border Background="#6c5ce7" CornerRadius="4" Padding="10" Margin="0 0 0 15">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="История карьеры: " 
+                           Foreground="White" FontSize="16" FontWeight="SemiBold"/>
+                <TextBlock Text="{Binding EmployeeName}" 
+                           Foreground="White" FontSize="16" Margin="5 0 0 0"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Список записей истории -->
+        <Border Grid.Row="1" Background="White" CornerRadius="4" Padding="10">
+            <ListView x:Name="CareerHistoryList" ItemsSource="{Binding CareerHistory}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Период работы" Width="200" DisplayMemberBinding="{Binding PeriodDisplay}"/>
+                        <GridViewColumn Header="Отдел" Width="150" DisplayMemberBinding="{Binding DepartmentName}"/>
+                        <GridViewColumn Header="Должность" Width="150" DisplayMemberBinding="{Binding PositionName}"/>
+                                                <GridViewColumn Header="Статус" Width="100" DisplayMemberBinding="{Binding CurrentStatus}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Border>
+
+        <!-- Кнопки управления -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 15 0 0">
+            <Button Content="Закрыть" Click="Close_Click" 
+                    Style="{StaticResource PrimaryButton}" Width="120"/>
+        </StackPanel>
+    </Grid>
+</Window>

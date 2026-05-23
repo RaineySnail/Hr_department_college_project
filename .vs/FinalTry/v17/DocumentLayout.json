@@ -1,0 +1,59 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nekip\\Desktop\\gpt_6_redisign_rev2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8705EB52-64D3-4D51-BF36-C88A90F58A18}|FinalTry\\HrDepartment.csproj|c:\\users\\nekip\\desktop\\gpt_6_redisign_rev2\\finaltry\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8705EB52-64D3-4D51-BF36-C88A90F58A18}|FinalTry\\HrDepartment.csproj|solutionrelative:finaltry\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8705EB52-64D3-4D51-BF36-C88A90F58A18}|FinalTry\\HrDepartment.csproj|c:\\users\\nekip\\desktop\\gpt_6_redisign_rev2\\finaltry\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8705EB52-64D3-4D51-BF36-C88A90F58A18}|FinalTry\\HrDepartment.csproj|solutionrelative:finaltry\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:236361628:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\nekip\\Desktop\\gpt_6_redisign_rev2\\FinalTry\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "FinalTry\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\nekip\\Desktop\\gpt_6_redisign_rev2\\FinalTry\\MainWindow.xaml",
+              "RelativeToolTip": "FinalTry\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-07T11:48:51.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\nekip\\Desktop\\gpt_6_redisign_rev2\\FinalTry\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "FinalTry\\LoginWindow.xaml",
+              "ToolTip": "C:\\Users\\nekip\\Desktop\\gpt_6_redisign_rev2\\FinalTry\\LoginWindow.xaml",
+              "RelativeToolTip": "FinalTry\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-07T11:40:50.313Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

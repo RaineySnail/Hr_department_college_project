@@ -1,0 +1,80 @@
+<Window x:Class="HrDepartment.UsersManagementWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Управление пользователями"
+        Height="560"
+        Width="900"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="CanMinimize">
+
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Пользователи системы" Style="{StaticResource TitleText}"/>
+
+        <Border Grid.Row="1" Style="{StaticResource Card}" Margin="0,12,0,0">
+            <TextBlock x:Name="UsersSummaryText"
+                       Text="Загрузка пользователей..."
+                       VerticalAlignment="Center"
+                       Foreground="{StaticResource MutedTextBrush}"/>
+        </Border>
+
+        <Border Grid.Row="2" Style="{StaticResource Card}" Margin="0,12,0,0">
+            <ListView x:Name="UsersList"
+                      ItemsSource="{Binding Users}"
+                      BorderThickness="0">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Логин" Width="150" DisplayMemberBinding="{Binding Username}"/>
+                        <GridViewColumn Header="ФИО" Width="250" DisplayMemberBinding="{Binding FullName}"/>
+                        <GridViewColumn Header="Роль" Width="180" DisplayMemberBinding="{Binding RoleName}"/>
+                        <GridViewColumn Header="Статус" Width="140">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Border CornerRadius="10"
+                                            Padding="8,3"
+                                            Background="#F3F4F6"
+                                            HorizontalAlignment="Left">
+                                        <TextBlock Text="{Binding StatusDisplay}"
+                                                   Foreground="{Binding StatusColor}"
+                                                   FontWeight="SemiBold"/>
+                                    </Border>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Border>
+
+        <StackPanel Grid.Row="3"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Margin="0,12,0,0">
+            <Button Content="Добавить"
+                    Click="AddUser_Click"
+                    Style="{StaticResource PrimaryButton}"
+                    Width="120"
+                    Margin="0,0,10,0"/>
+            <Button Content="Редактировать"
+                    Click="EditUser_Click"
+                    Style="{StaticResource ButtonBase}"
+                    Width="140"
+                    Margin="0,0,10,0"/>
+            <Button Content="Блок / разблок"
+                    Click="ToggleUserActive_Click"
+                    Style="{StaticResource DangerButton}"
+                    Width="160"
+                    Margin="0,0,10,0"/>
+            <Button Content="Закрыть"
+                    Click="Close_Click"
+                    Style="{StaticResource ButtonBase}"
+                    Width="120"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,74 @@
+<Window x:Class="HrDepartment.AddEventWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Оформить событие"
+        Height="380" Width="560"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize">
+
+    <Grid Margin="18">
+        <Border Style="{StaticResource Card}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel>
+                    <TextBlock Text="Оформление события" Style="{StaticResource TitleText}"/>
+                    <TextBlock x:Name="EmployeeNameText" Style="{StaticResource HintText}"/>
+                </StackPanel>
+
+                <Grid Grid.Row="1" Margin="0,16,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="140"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Тип события" VerticalAlignment="Center" Style="{StaticResource HintText}"/>
+                    <ComboBox x:Name="TypeCombo" Grid.Column="1"/>
+                </Grid>
+
+                <Grid Grid.Row="2" Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="140"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Дата начала" VerticalAlignment="Center" Style="{StaticResource HintText}"/>
+                    <DatePicker x:Name="StartDatePicker" Grid.Column="1" Width="180" HorizontalAlignment="Left"/>
+                </Grid>
+
+                <Grid Grid.Row="3" Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="140"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Дата окончания" VerticalAlignment="Center" Style="{StaticResource HintText}"/>
+                    <DatePicker x:Name="EndDatePicker" Grid.Column="1" Width="180" HorizontalAlignment="Left"/>
+                </Grid>
+
+                <Grid Grid.Row="4" Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="140"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Обоснование" VerticalAlignment="Top" Margin="0,6,0,0" Style="{StaticResource HintText}"/>
+                    <TextBox x:Name="ReasonBox" Grid.Column="1" Height="70" TextWrapping="Wrap" AcceptsReturn="True"/>
+                </Grid>
+
+                <TextBlock Grid.Row="5" TextWrapping="Wrap" Style="{StaticResource HintText}" Margin="0,14,0,10">
+                    Примечание: для события "Отпускной" система автоматически обновит статус "В отпуске" у сотрудника.
+                </TextBlock>
+
+                <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,6,0,0">
+                    <Button Content="Сохранить" Width="120" Style="{StaticResource PrimaryButton}" Margin="0,0,10,0" Click="Save_Click"/>
+                    <Button Content="Отмена" Width="120" Style="{StaticResource ButtonBase}" Click="Cancel_Click"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
